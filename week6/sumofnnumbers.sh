@@ -1,10 +1,8 @@
 echo "enter the number of n "
 read n
-i=1
-ans=0
-while [ $i -le $n ]
+sum = 0
+for ((i=0; i<=n; i++))
 do
-ans=`expr $ans+$i|bc`
-i=`expr $i+1|bc`
+  sum = $((sum+i))
 done
-echo "sum of n numbers:$ans"
+echo "sum of first N number is $num"
